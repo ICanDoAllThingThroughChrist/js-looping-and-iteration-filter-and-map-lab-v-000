@@ -24,4 +24,8 @@ function exactMatch(collection, object) {
   })
 }
 
-
+function exactMatchToList (collection, object) {
+  return exactMatch(collection, object).map(function(driver){
+    return driver.name;
+  });
+}
