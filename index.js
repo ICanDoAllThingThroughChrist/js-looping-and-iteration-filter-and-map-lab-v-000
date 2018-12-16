@@ -21,5 +21,5 @@ function exactMatch(collection, object) {
       match = object[key] === obj[key];
     }
     return match;
-  });
+  })
 }
