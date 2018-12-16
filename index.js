@@ -18,7 +18,7 @@ function exactMatch(collection, object) {
   return collection.filter(function(obj){
     let match;
     for (const key in obj) {
-      match = object[key] === obj[key];
+      match = obj[key] === object[key];
     }
     return match;
   })
