@@ -6,7 +6,7 @@ function driversWithRevenueOver (collection, revenue) {
 
 function driverNamesWithRevenueOver(collection, number) {
   const newArr = [];
-  return collection.filter(function(object){
+  collection.filter(function(object){
     if(object.revenue>=number) {
       newArr.push(object.name)
     }
